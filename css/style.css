@@ -1,0 +1,792 @@
+*{
+  margin:0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+  font-family: 'Muli', sans-serif;
+}
+h1,h2{
+font-family: 'Righteous', cursive;
+}
+
+h2{
+  font-size: 45px;
+  font-weight: 500;
+  color:#fff;
+}
+
+h3{
+  color:#ff0000;
+}
+hr{
+  background:#ff0000;
+  width: 60px;
+  height: 3px;
+}
+header {
+  position: relative;
+  background-color: black;
+  height:1000px;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;`
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+header .naslov {
+  position: relative;
+  z-index: 2;
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.45;
+  z-index: 1;
+}
+header h1{
+  color: red;
+  font-weight: 900;
+}
+header p:nth-of-type(2){
+  color: gray;
+}
+
+.navbar{
+  padding:5px 10px;
+  box-shadow:0px 0px;
+}
+.fixed-top{
+  transition: background-color 400ms linear;
+}
+
+nav{
+  z-index: 3;
+
+}
+nav ul{
+  font-size:1.3em;
+}
+.navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+  color: #ff0000;
+  font-weight: 500;
+}
+.navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+  color:#fff;
+}
+.nav-item{
+  text-align: right;
+}
+/*kod za nav dugme*/
+.animated-icon1, .animated-icon2, .animated-icon3 {
+width: 40px;
+height: 20px;
+position: relative;
+margin: 0px;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+cursor: pointer;
+}
+
+.animated-icon1 span, .animated-icon2 span, .animated-icon3 span {
+display: block;
+position: absolute;
+height: 3px;
+width: 100%;
+border-radius: 9px;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .25s ease-in-out;
+-moz-transition: .25s ease-in-out;
+-o-transition: .25s ease-in-out;
+transition: .25s ease-in-out;
+}
+
+.animated-icon1 span {
+background: red;
+}
+
+.animated-icon2 span {
+background: red;
+}
+
+.animated-icon3 span {
+background: red;
+}
+
+.animated-icon1 span:nth-child(1) {
+top: 0px;
+}
+
+.animated-icon1 span:nth-child(2) {
+top: 10px;
+}
+
+.animated-icon1 span:nth-child(3) {
+top: 20px;
+}
+
+.animated-icon1.open span:nth-child(1) {
+top: 11px;
+-webkit-transform: rotate(135deg);
+-moz-transform: rotate(135deg);
+-o-transform: rotate(135deg);
+transform: rotate(135deg);
+}
+
+.animated-icon1.open span:nth-child(2) {
+opacity: 0;
+left: -60px;
+}
+
+.animated-icon1.open span:nth-child(3) {
+top: 11px;
+-webkit-transform: rotate(-135deg);
+-moz-transform: rotate(-135deg);
+-o-transform: rotate(-135deg);
+transform: rotate(-135deg);
+}
+.downArrow{
+  font-size: 65px;
+  padding-top: 210px;
+  color:   rgb(255, 64, 0);
+}
+.downArrow a{
+  color:   rgb(255, 64, 0);
+}
+.bounce {
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
+}
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+
+
+
+/**/
+.img-header{
+  padding-top: 220px;
+}
+
+#about,#services,#clients, #contact, #team, #news{
+  background-color: #202020;
+  color: #fff;
+}
+
+#about p{
+  font-size: 20px;
+}
+
+.myButton1{
+    width: 180px;
+    height: 60px;
+    border: 1px solid #fff;
+    background: 0 0;
+    border-radius: 2px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 40px;
+    transition: all 0.4s ease-out 0s;
+}
+.myButton1:hover{
+  cursor: pointer;
+  background: red;
+  border: transparent;
+}
+.services{
+  padding: 40px;
+  margin-top: 30px;
+  color: red;
+  text-align: center;
+  background-color: transparent;
+  transition: all .4s ease-out 0s;
+}
+.services h4{
+  color: white;
+  font-size: 25px;
+}
+.services p{
+  color: #646464;
+}
+.services:hover h4, .services:hover p{
+  color: #303030;
+  color: white;
+}
+.services:hover{
+ transform: scale(1.1);
+}
+.services .icon {
+  font-size: 50px;
+}
+.paragrafS{
+  font-size: 20px;
+}
+/*css za clients*/
+.card-body{
+  padding: 1.25rem 0.25rem;
+}
+
+.card .card-body .card-text span{
+  visibility: hidden;
+}
+.card-body h4{
+  color: #202020;
+}
+#team h4{
+  margin-top: 25px;
+}
+ul.social-buttons li a {
+    font-size: 20px;
+    line-height: 50px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    transition: all .3s;
+    color: #fff;
+    border-radius: 100%;
+    background-color: #404040;
+}
+ul.social-buttons li a:hover {
+    background-color: #ff0000;
+}
+footer h4{
+  margin-bottom: 0px;
+}
+#team, #clients,#contact{
+  padding-top: 15px;
+  padding-bottom: 75px;
+  background-image: url(../img/teambg.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+#about{
+  padding-bottom: 50px;
+}
+#hidden{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Show 4th slide on md if col-md-4*/
+    .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item{
+        position: absolute;
+        top: 0;
+        right: -33.3333%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {*/
+    /* Show 3rd slide on sm if col-sm-6*/
+    .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item{
+        position: absolute;
+        top: 0;
+        right: -50%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel-item {
+        margin-right: 0;
+    }
+    /* show 2 items */
+    .carousel-inner .active + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* farthest right hidden item must be also positioned for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+/* LG */
+@media (min-width: 991px) {
+    /* show 4th item */
+    .carousel-inner .active + .carousel-item + .carousel-item  {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    /* Show 5th slide on lg if col-lg-3 */
+    .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* left or forward direction */
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item{
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction //t - previous slide direction last item animation fix */
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+.carousel-control-prev, .carousel-control-next{
+  width: 7%;
+  margin: 0px 30px;
+}
+.carousel .carousel-control-prev-icon,.carousel-control-next-icon  {
+    background-image: none;
+ 
+}
+.carousel .carousel-control-next-icon{
+  background-image: none;
+
+}
+
+.carousel-control-prev i, .carousel-control-next i{
+  font-size: 60px;
+  color: rgb(255,255,255);
+  
+  padding:0px 25px 0px 15px;
+  border-radius: 40px;
+  background-color: #202020;
+
+}
+
+ .carousel-control-next i{
+  padding:0px 15px 0px 25px;
+ }
+ .carousel{
+  width: 90%;
+  margin: 0px auto;
+}
+.modal-title,.modal-body{
+  color: #000;
+}
+.modal-body i{
+  color:orange;
+  position: absolute;
+  bottom:-30px;
+  left: -20px;
+  font-size: 150px;
+  overflow:hidden;
+}
+.modal-body{
+  overflow:hidden;
+}
+.modal-body p{
+  font-size: 16px;
+  
+}
+#news .modal-title{
+  color:#000;
+}
+.telefonIkona{
+  display: none !important;
+}
+
+
+/*css za news*/
+#news h3{
+  color:#fff;
+
+}
+.text-red {
+    color: #eb2123;
+}
+
+.text-pink {
+    color: #f7008a;
+}
+.news-feed-heading {
+    font-size: 1.5em;
+}
+.news-heading-intro {
+    font-size: 1.25rem;
+}
+.text-black {
+  color: #000 ;
+}
+#news h3 a{
+  color: #fff;
+}
+.fullbar-item:hover {
+  background: rgba(255,255,255,0.03);
+}
+.scroll {
+   height: 650px;
+   overflow: auto;
+}
+.scroll::-webkit-scrollbar {
+    width: 12px;
+}
+
+.scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+    border-radius: 5px;
+
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(255, 0, 0,0.6); 
+}
+
+@media screen and (max-width: 768px) {
+  .in-news {
+    font-size: 1.5rem;    
+  }
+
+  .news-feed-heading {
+    font-size: 1.75rem; 
+  }
+  .feed-item-heading {
+    font-size: 1.25rem;
+  }
+  .news-heading-intro {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .in-news {
+    font-size: 1.5rem !important;    
+  }
+
+  .news-feed-heading {
+    font-size: 1.75rem !important; 
+  }
+  .feed-item-heading {
+    font-size: 1.25rem !important;
+  }
+  .news-heading-intro {
+    font-size: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .in-news {
+    font-size: 1.5rem !important;    
+  }
+
+  .news-feed-heading {
+    font-size: 1.75rem !important; 
+  }
+  .feed-item-heading {
+    font-size: 1.25rem !important;
+  }
+  .news-heading-intro {
+    font-size: 1rem !important;
+  }
+}
+/**/
+/*css za contact*/
+.naslovSocial h3{
+  padding-top: 10px;
+  font-size: 30px;
+  color: #fff;
+}
+.ikoneSocial{
+  font-size: 35px;
+
+}
+.ikoneSocial a{
+  color: #fff;
+}
+.ikoneSocial a:hover{
+  color: #202020;
+
+}
+#contact{
+  padding-bottom: 0px;
+}
+.socials{
+  background-color: rgba(255,49,49,0.9);
+}
+.ikoneKontakt{
+  padding-bottom: 50px;
+}
+.ikoneKontakt i{
+  margin-top: 40px;
+  font-size: 60px;
+  color: #ff4545;
+}
+.ikoneKontakt a{
+  color: #fff;
+
+}
+
+.blokjedan:hover p{
+  color: #ff4545;
+  transition: 0.4s;
+}
+
+.ikoneKontakt p:hover{
+  color: #ff0000;
+
+}
+.ikoneKontakt p:visited{
+  color: #fff;
+}
+.mejl{
+  font-size:0.9em;
+}
+/**/
+/*css za footer*/
+ footer{
+  background-color: #1a1a1a;
+}
+
+footer h4, .copy{
+  color: #fff;
+}
+
+footer .copy a, .xml a{
+  color: #ff0000;
+}
+
+/**/
+
+
+@media  (max-width: 768px){
+  .ikoneKontakt{
+    width: 300px;
+  margin-top:20px !important;
+  padding-bottom: 20px !important;
+  }
+  .telefonIkona{
+  display: block !important;
+  display: flex;
+  justify-content: center;
+}
+.downArrow{
+  font-size:45px;
+}
+.carousel-control-prev i, .carousel-control-next i{
+  display: none;
+}
+.telefonIkona i{
+  font-size: 40px;
+  color: #ff4545;
+ 
+}
+.telefonIkona p{
+  font-size: 18px;
+ 
+}
+.float{
+  display: flex;
+  justify-content: center;
+}
+  .datum{
+  text-align: center;
+  margin-top: 20px;
+}
+.newslogo{
+  text-align: center;
+  margin-bottom: 20px;
+}
+#news h3{
+  text-align: center;
+
+}
+.scroll{
+  width: 400px !important;
+}
+}
+@media  (max-width: 450px) {
+  header{
+    height: 750px;
+  }
+  header .naslov h1{
+    font-size: 2.8em;
+    padding-top: 250px;
+  }
+  .navbar{
+    background-color: rgba(0,0,0,0.65);
+  }
+  .img-header{
+    display: none;
+  }
+  .center{
+    text-align: center;
+  }
+  #about p{
+    font-size: 18px;
+  }
+  .paragrafS{
+    font-size: 18px;
+  }
+  .services .icon {
+    font-size: 35px;
+}
+  #team, #clients,#contact{
+  
+  background-position:  center top;
+}
+  .imgFounder img, .imgPartner img{
+    width: 65%;
+  }
+  .services{
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.slikaAbout{
+  display: none;
+}
+
+.downArrow{
+  
+  padding-top: 70px;
+ 
+}
+.scroll{
+  width: 270px !important;
+}
+
+#newsslika{
+  padding-bottom: 30px!important;
+}
+.telefon img{
+  padding-bottom: 10px;
+}
+.telefon h3{
+  padding-bottom: 10px;
+}
+.ikoneKontakt{
+  margin-top: 20px;
+  
+}
+.modal-body i{
+
+  font-size: 110px;
+  
+}
+
+
+}
