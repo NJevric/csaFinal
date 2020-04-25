@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{HTTP_HOST} !^www\.csasportsmanagement\.com$ [NC]
+RewriteRule ^(.*)$ http://www.csasportsmanagement.com/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^www\.csasportsmanagement\.com$
+RewriteRule ^/?$ "http\:\/\/csasportsmanagement\.com\/" [R=301,L]
